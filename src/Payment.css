@@ -1,0 +1,60 @@
+.payment {
+    display: flex;
+    justify-content: center;
+    padding-top: 1px;
+}
+
+.payment_container {
+    text-align: left;
+    padding: 15px;
+    font-weight: 400;
+    background-color: rgb(251, 255, 255);
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.payment_container > h1 a {
+    text-decoration: none;
+    color: #000;
+}
+
+.payment_section {
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+}
+
+.payment_title {
+    font-weight: bold;
+    margin-bottom: 12px;
+    
+}
+
+.payment_address,
+.payment_items,
+.payment_detail {
+    margin-bottom: 24px;
+    width: 94%; /* Adjust the width as needed */
+}
+.payment_detail>form>div>button{
+    background: #f0c14b;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border:1px solid;
+    font-weight: bolder;
+    margin-top: 15px;
+    border-color: #a88734 #9c7e31 #846a29;
+    cursor: pointer;
+    transition: background-color 0.1s;
+    
+    
+}
+.payment_detail>form>div> button:hover {
+    background-color: #d8af50; /* New button color on hover */
+  }
+  

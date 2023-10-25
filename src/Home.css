@@ -1,0 +1,30 @@
+.home {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px; /* Add padding to create space on both sides */
+    font-family: 'Georgia ', serif;
+    font-size: 16px;
+    
+}
+.home__row {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    justify-content: space-between; /* Distribute items evenly along the row */
+    margin: 0 -5px; /* Add a negative margin to counteract the padding on each product */
+}
+.home_image {
+    width: 100%;
+    mask-image: linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0));
+    transition: opacity 1.2s ease-in-out;
+    object-fit: cover; /* Ensure the image covers the container */
+    aspect-ratio: 16 / 9; /* Set a specific aspect ratio (4:3 in this example) */
+    z-index: -1;
+  
+}
+
+@media (max-width: 600px) {
+    .home__row {
+      font-size: 0.8em; 
+    }
+  }

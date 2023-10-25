@@ -1,0 +1,131 @@
+.header {
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header_logo {
+    width: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 18px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.header_logo:hover {
+    opacity: 0.8;
+}
+
+.header_search {
+    display: flex;
+    flex:1;
+}
+
+.header_searchInput {
+    height: 12px;
+    border: none; 
+    padding: 10px;
+    width: 100%;
+    font-size: medium;
+}
+
+.header_searchWrapper {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    width: 100%;
+}
+
+.header_searchWrapper>span {
+    color: black;
+    cursor: pointer;
+    font-family: Georgia, serif;
+    font-size: medium;
+    transition: rgb(174, 165, 165) 0.1s;
+}
+
+.header_searchWrapper>span:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 0.8;
+}
+
+.header_searchIcon {
+    padding: 4px;
+    height: 22px;
+    background-color: #cd9042;
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.header_icon:hover {
+    opacity: 0.8;
+}
+
+.header_nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header_link {
+    color: white;
+    text-decoration: none;
+}
+
+.header_option {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header_optionLineOne {
+    font-size: 10px;
+}
+
+.header_optionLineTwo {
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.header_optionBasket {
+    display: flex;
+    align-items: center;
+}
+
+.header_basketCount {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header_link:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+  .header_logo {
+    width: 80px;
+  }
+
+  .header_optionLineOne {
+    font-size: 8px;
+  }
+
+  .header_optionLineTwo {
+    font-size: 11px;
+  }
+
+  .header_basketCount {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}

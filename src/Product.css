@@ -1,0 +1,80 @@
+.product {
+    flex: 1 1 calc(33.33% - 20px); /* Allow items to grow and shrink, minus padding */
+    max-height: 400px;
+    min-width: 100px;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    z-index: 1;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    transition: background-color 0.1s ease-in-out;
+    display: grid;
+}
+
+.product__info {
+    height: 130px; /* Set a fixed height */
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    /*justify-content: space-between; /* Space them out evenly */
+    margin-bottom: 10px; /* Add some space between the info and rating */
+}
+
+.product__rating {
+    display: flex;
+    justify-content: center; /* Center the rating */
+    font-size: 1em;
+    flex-shrink: 0;
+    
+}
+.product__rating p {
+    text-shadow: 1px 1px 2px rgba(234, 163, 10, 0.939); /* Add a subtle white shadow */
+    /*margin-bottom: 10px;*/
+  }
+
+.product__price {
+    margin-top: 6px;
+    margin-bottom: 4px;
+    
+}
+
+.product > img {
+    max-height: 150px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.product > button {
+    background-color: #f0c14b;
+    border: 1px solid;
+    border-color: #a88734 #9c7e31 #846a29;
+    /*margin-top: 20px; /* Add some margin to space out the button */
+    margin: auto;
+    width:100%;
+    border-width: 0.9px;
+    margin-block: 3px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+    padding: 6px 6px;
+    border-radius: 2px;
+    object-fit: contain;
+    grid-row: 3;
+ 
+}
+.product > img:hover {
+    opacity: 0.8; /* Reduce opacity on hover */
+    transition: opacity 0.3s ease; /* Add transition for smooth hover effect */
+  }
+  
+.product > button:hover{
+ background-color: #d8af50;
+}
+
+@media (max-width: 768px) {
+    .product {
+        flex: 1 1 calc(50% - 20px); 
+    }
+}
+
